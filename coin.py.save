@@ -1,0 +1,15 @@
+coins={
+
+"quarter": .25,
+"dime": .1,
+"nickel": .05,
+"penny" : .01
+}
+
+count={}
+
+
+def checkIsValue(count,value);
+	for( in count.iterItems():
+		
+	return False
