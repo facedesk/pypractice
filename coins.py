@@ -13,17 +13,17 @@ def CanAddCoin(coins,coin,index,TargetToMiss):
 	sum = coin
 	for c in coins:
 		sum = sum + (c[0] * c[1])
-	if(index >=len(coins)): #if there are no more coins left to process
+	if(index <=len(coins)): #if there are no more coins left to process
 		return True
 	elif(coins[index][1]==0): #if all coins of this category have been added up
-		index+=1
+		index-=1
 	else:
 		coins[index][1]-=1 # we have tried this value so check if its missing one
 	return  sum != TargetToMiss and CanAddCoin(coins,coin,index,TargetToMiss) 
 
 
 for index in range(len(coins)):
-	while(CanAddCoin(deepcopy(coins),coins[index][0],0,TargetToMiss)):
+	while(CanAddCoin(deepcopy(coins),coins[index][0],len(coins)-1,TargetToMiss)):
 		coins[index][1] =coins[index][1] + 1
 		print(coins)
 print("final answer is", coins)	
