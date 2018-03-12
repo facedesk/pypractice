@@ -1,0 +1,28 @@
+socks = "socks"
+jeans = "jeans"
+laptop = "laptop"
+toiletries="toiletries"
+
+luggage = []
+
+done = "n"
+while(done != "y"):
+	good1 = raw_input("what you like to pack?")
+	luggage.append(good1)
+	done = raw_input("add another item? y/n")
+
+
+for goods in luggage:
+	
+
+
+
+
+grades = [ 
+96.0,
+100.0,
+75.5,
+89.5
+]
+print(grades,sum(grades)/len(grades))
+

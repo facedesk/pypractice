@@ -22,7 +22,6 @@ def CanAddCoin(coins,coin,index,TargetToMiss):
 		print(index)
 	return  sum != TargetToMiss and CanAddCoin(coins,coin,index,TargetToMiss) 
 
-
 for index in range(len(coins)):
 	while(CanAddCoin(deepcopy(coins),coins[index][0],0,TargetToMiss)):
 		coins[index][1] =coins[index][1] + 1
