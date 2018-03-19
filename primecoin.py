@@ -5,8 +5,8 @@ x = 0
 for p1 in prime:
   for p2 in prime:
     x+=1
-    if(str(p1*p2).endswith("987654321")):
-      print(p1*p2)
+    if(str(p1*p2).endswith("87654321")):
+      print(p1,p2,p1*p2)
     if(x%100000 == 0):
 	sys.stdout.write(".")
 	sys.stdout.flush()

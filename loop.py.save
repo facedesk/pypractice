@@ -1,0 +1,16 @@
+frame = 0
+totalScore = 0
+frames = []
+while(frame < 10):
+	print("enter the ",frame)
+	bowl = raw_input("what did you bowl?")
+	frames.append(bowl)
+	if(bowl=="X"):
+		bowl = 10
+	elif(bowl=="/")
+		bowl = 10
+	elif(!bowl.isdigit())
+		bowl = 0
+	totalScore += int(bowl)
+	frame +=1
+print(totalScore)
