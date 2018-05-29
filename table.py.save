@@ -1,0 +1,23 @@
+'''
+Write a python function called make_table that takes in an integer
+and displays a multiplication table of that integers size
+e.g.
+
+make_table(4)
+
+   [1][2][3][4]
+[1] 1  2  3  4
+[2] 2  4  6  8
+[3] 3  6  9  12
+[4] 4  8  12 16
+'''
+
+def make_table(number):
+	
+	print('made a function')
+
+
+x = 4
+make_table(x
+)
+
